@@ -1,0 +1,188 @@
+.navbar{
+    // background-color: #070708;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 10.7%;
+    padding: 1rem 0rem;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    &_heading{
+        margin-top: 1rem;
+        position: relative;
+        background-color: #070708;
+        h3{
+            margin: 0;
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 500;
+            padding: 0rem 0.7rem;
+        }
+        &::after{
+            position: absolute;
+            content: '';
+            top: -7%;
+            left: -3%;
+            width: 25px;
+            height: 25px;
+            background-color: var(--color);
+            z-index: -100;
+            // animation: navbar_heading_left_border_animation 5s linear infinite;
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            bottom: -7%;
+            right: -3%;
+            width: 25px;
+            height: 25px;
+            background-color: var(--color);
+            z-index: -100;
+            // animation: navbar_heading_right_border_animation 5s linear infinite;
+        }
+    }
+    &_items{
+        // margin-top: 3rem;
+        &_item{
+            padding: 1.2rem 0;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            & span:nth-child(1){
+                color: var(--color);
+                font-size: 1.4rem;
+                margin-right: 0.4rem;
+            }
+            & span:nth-child(2){
+                color: #fff;
+                font-size: 0.9rem;
+            }
+        }
+    }
+    &_resume{
+        margin-bottom: 2rem;
+        a{
+            text-decoration: none;
+        }
+        &_button{
+            background-color: var(--color);
+            font-family: "Poppins", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span{
+                margin-right: 0.5rem;
+                font-size: 0.9rem;
+                margin-top: 0.2rem;
+            }
+            h4{
+                margin: 0;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+.navbar_smallscreen{
+    position: absolute;
+    left: 5%;
+    top: 40px;
+    display: none;
+    color: #fff;
+    z-index: 100;
+    font-family: "Poppins", sans-serif;
+    &_menuicon{
+        width: 50px !important;
+        height: 50px !important;
+        span{
+            font-size: 2.5rem;
+        }
+    }
+    &_list{
+        display: none;
+        list-style-type: none;
+        margin: 0;
+        padding: 0.5rem 0;
+        background-color: #070708;
+            li{
+                display: inline-block;
+                padding: 0.6rem 0 0.6rem;
+                padding-left: 1rem;
+                padding-right: 6rem;
+                font-size: 0.9rem;
+                cursor: pointer;
+        }
+    }
+    &_show{
+        display: flex;
+        flex-direction: column;
+        animation: navbar_smallscreen_list_animation_show 1s linear;
+    }
+    &_hide{
+        display: none;
+        animation: navbar_smallscreen_list_animation_hide 1s linear;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .navbar{
+        display: none
+    }
+    .navbar_smallscreen{
+        display: block;
+    }
+}
+
+@keyframes navbar_smallscreen_list_animation_show {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes navbar_smallscreen_list_animation_hide {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+@keyframes navbar_heading_left_border_animation {
+    0%{
+        top: -7%;
+    }
+    50%{
+        top: 42%;
+    }
+    100%{
+        top: -7%;
+    }
+}
+
+@keyframes navbar_heading_right_border_animation {
+    0%{
+        bottom: -7%;
+    }
+    50%{
+        bottom: 42%;
+    }
+    100%{
+        bottom: -7%;
+    }
+}
+
+//#1a2a41
+//#25ca7f
+//#212529
+//#343a40
+//#070708

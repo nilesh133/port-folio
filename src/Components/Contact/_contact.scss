@@ -1,0 +1,235 @@
+.contact{
+    // margin-left: 10.9%;
+    // width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+
+    // --> Old animation start
+    transform: translateX(100%);
+    animation: display 0.8s linear forwards;
+    // Old animation end <--
+
+    // --> New animation start
+    // opacity: 0;
+    // animation-delay: 2.5s;
+    // --> New animation end
+
+    animation: display 1s linear forwards;
+    background-color: #121212;
+    padding-top: 2.5rem;
+    padding-bottom: 5rem;
+    &_heading{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #fff;
+        margin: 0 auto;
+        margin-bottom: 1.2rem;
+        h3{
+            margin: 0.7rem 0;
+        }
+        p{
+            font-size: 0.9rem;
+            margin: 0;
+            color: var(--color);
+        }
+    }
+    &_messageinfo{
+        display: flex;
+        justify-content: center;
+        &_message{
+            width: 43%;
+            margin: 2rem;
+            background-color: #070708;
+            padding: 0.5rem 0.8rem;
+            border-radius: 1rem;
+            h3{
+                color: var(--color);
+                font-weight: 500;
+                font-size: 1rem;
+                padding-left: 1rem;
+            }
+            &_form{
+                display: flex;
+                flex-direction: column;
+                padding: 2rem;
+                &_input{
+                    margin-bottom: 1.5rem;
+                    p{
+                        margin: 0;
+                        color: #a0a8b3;
+                        margin-bottom: 0.7rem;
+                    }
+                    input, textarea{
+                        width: 90%;
+                        // background-color: #191b1e;
+                        background-color: #070708;
+                        border: none;
+                        outline: none;
+                        padding: 0.6rem 0.4rem;
+                        font-size: 0.9rem;
+                        color: #a0a8b3;
+                        font-family: "Poppins", sans-serif;
+                        box-shadow: 1px 4px 2px -3px rgba(0, 0, 0, 0.7) inset, -1px -3px 3px -2px rgba(255, 255, 255, 0.2) inset;
+                        border: 2px solid #191b1e;
+                        border-radius: 0.3rem;
+                        transition: all 0.3s ease;
+                        &:focus{
+                            border: 2px solid var(--color);
+                        }
+                    }
+                }
+            }
+        }
+        &_info{
+            width: 43%;
+            margin: 2rem;
+            background-color: #070708;
+            padding: 0.5rem 0.8rem;
+            border-radius: 1rem;
+            &_image{
+                background-image: url("../../images/contact.png");
+                width: 85%;
+                height: 200px;
+                background-position: center;
+                background-size: cover;
+                margin: 0 auto;
+                border-radius: 0.3rem;
+            }
+            h3{
+                color: var(--color);
+                font-weight: 500;
+                font-size: 1rem;
+                padding-left: 1rem;
+                padding-left: 2rem;
+            }
+            h2{
+                color: #a0a8b3;
+                padding-left: 2rem;
+                margin: 0;
+                margin-top: 1rem;
+            }
+            p{
+                color: #a0a8b3;
+                padding-left: 2rem;
+                font-size: 0.9rem;
+                margin: 0;
+            }
+            &_details{
+                display: flex;
+                margin-top: 3rem;
+                padding-left: 2rem;
+                &_icons{
+                    display: flex;
+                    flex-direction: column;
+                    padding-right: 1rem;
+                    border-right: 2px solid #a0a8b3;
+                    span{
+                        font-size: 2.2rem;
+                        color: var(--color);
+                        margin-bottom: 1rem;
+                    }
+                }
+                &_detail{
+                    display: flex;
+                    flex-direction: column;
+                    padding-left: 1rem;
+                    &_single{
+                        margin-bottom: 1.5rem;
+                        h4:nth-child(1){
+                            margin: 0;
+                            color: #a0a8b3;
+                            font-weight: 500;
+                            font-size: 1rem;
+                        }
+                        h4:nth-child(2){
+                            margin: 0;
+                            color: #fff;
+                            font-weight: 400;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+            &_social{
+                color: white;
+                padding-left: 2rem;
+                margin-top: 2.5rem;
+                a{
+                    text-decoration: none;
+                }
+                span{
+                    font-size: 1.3rem;
+                    padding: 0.4rem 0.6rem;
+                    border: 1px solid var(--color);
+                    margin-right: 1rem;
+                    border-radius: 1rem;
+                    color: var(--color);
+                    cursor: pointer;
+                    transition: all 0.4s ease-in;
+                    &:hover{
+                        background-color: var(--color);
+                        color: #fff;
+                        border: 1px solid transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .contact{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 1240px) {
+    .contact{
+        &_messageinfo{
+            flex-direction: column;
+            align-items: center;
+            &_message{
+                width: 80%;
+            }
+            &_info{
+                width: 80%;
+                padding-bottom: 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .contact{
+        &_heading{
+            p{
+                text-align: center;
+                width: 71%;
+            }
+        }
+        &_messageinfo{
+            &_message{
+                width: 80%;
+                &_form{
+                    padding: 1rem;
+                }
+            }
+            &_info{
+                h2{
+                    padding-left: 1rem;
+                }
+                p{
+                    padding-left: 1rem;
+                }
+                &_details{
+                    padding-left: 1rem;
+                }
+            }
+        }
+    }
+}

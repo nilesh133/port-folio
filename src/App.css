@@ -1,38 +1,216 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading_line{
+  position: relative;
+  width: 90px;
+  height: 4px;
+  background-color: var(--color);
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.heading_line::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #121212;
+  animation: heading_line_animation 3s 0.3s linear infinite;
+}
+
+.heading_line::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 5px;
+  height: 100%;
+  background-color: #121212;
+  animation: heading_line_animation 3s linear infinite;
+}
+
+@keyframes heading_line_animation{
+  from{
+    transform: translate(0px);
+  }
+  to{
+    transform: translate(90px);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.pages_subheading{
+  position: relative;
+  margin-bottom: 1.6rem;
+  width: fit-content;
+  /* margin-left: 7rem; */
 }
 
-.App-link {
-  color: #61dafb;
+.pages_subheading h3{
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 0;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.pages_subheading_circle{
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 3px solid var(--color);
+  margin: 0 auto;
+  position: relative;
+}
+
+.pages_subheading::before{
+  content: '';
+  width: 40%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  top: 83%;
+  background-color: var(--color);
+}
+
+.pages_subheading::after{
+  content: '';
+  width: 40%;
+  height: 3px;
+  position: absolute;
+  right: 0;
+  background-color: var(--color);
+  top: 83%;
+}
+
+.theme1{
+  --color: #25ca7f
+}
+
+.theme2{
+  --color: #00a3e1
+}
+
+.theme3{
+  --color: #d94c48
+}
+
+.theme4{
+  --color: #bb68c8
+}
+
+.theme5{
+  --color: #0dcdbd
+}
+
+.theme6{
+  --color: #eae328
+}
+
+.theme7{
+  --color: #ff5e94
+}
+
+.theme8{
+  --color: #fa5b0f
+}
+
+.theme9{
+  --color: #9200ee
+}
+
+.theme10{
+  --color: #00d4bd
+}
+
+.theme11{
+  --color: #5e9e9f
+}
+
+.theme12{
+  --color: #666d41
+}
+
+/* --> Old animation start */
+@keyframes display {
+  from{
+    transform: translateX(100%);
   }
-  to {
-    transform: rotate(360deg);
+  to{
+    transform: translateX(0%);
+  }
+}
+/* Old animation end <-- */
+
+.main{
+  margin-left: 10.9%;
+  width: 100%;
+}
+
+/* --> New animation start */
+/* @keyframes display {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+} */
+
+/* .main::before{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: -100%;
+  left: 0;
+  background-color: #121212;
+  z-index: 100;
+  animation: page-loader-animation-top 2s linear;
+} */
+
+/* .main::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 50vh;
+  bottom: -20%;
+  left: 0;
+  background-color: #121212;
+  z-index: 100;
+  animation: page-loader-animation-bottom 2.5s linear;
+} */
+
+/* @keyframes page-loader-animation-top {
+  0%{
+      top: -100%;
+  }
+  50%{
+    top: 0;
+  }
+  100%{
+    top: -100%;
+  }
+} */
+
+/* @keyframes page-loader-animation-bottom {
+  0%{
+      bottom: -40%;
+  }
+  50%{
+      bottom: 0;
+  }
+  100%{
+      bottom: -40%;
+  }
+} */
+/* --> New animation end */
+
+@media screen and (max-width: 1100px) {
+  .main{
+    margin-left: 0;
   }
 }

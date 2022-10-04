@@ -1,0 +1,321 @@
+.home{
+    background: url("../../images/home-bg.png") rgba(0, 0, 0, 0.5);
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: darken;
+    margin-left: 10.7%;
+    width: 89.3%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Poppins", sans-serif;
+    // padding-top: 10%;
+    &_name{
+        display: none;
+        position: absolute;
+        top: 50px;
+        border-top: 5px solid var(--color);
+        border-bottom: 5px solid var(--color);
+        border-radius: 1rem;
+        // background-color: #070708;
+        h3{
+            margin: 0;
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 500;
+            padding: 0rem 0.7rem;
+            z-index: 200;
+        }
+        // &::after{
+        //     position: absolute;
+        //     content: '';
+        //     top: 0%;
+        //     left: 0%;
+        //     width: 25px;
+        //     height: 25px;
+        //     background-color: var(--color);
+        //     z-index: 100;
+        // }
+        // &::before{
+        //     position: absolute;
+        //     content: '';
+        //     bottom: 0%;
+        //     right: 0%;
+        //     width: 25px;
+        //     height: 25px;
+        //     background-color: var(--color);
+        //     z-index: 100;
+        // }
+    }
+    &_content{
+        display: flex;
+        transform: translateX(100%);
+        animation: display 0.8s linear forwards;
+        // height: 80%;
+        &_avatar{
+            width: 300px;
+            height: 380px;
+            background: url("../../images/portfolio-profile-1.jpg");
+            background-position: center;
+            background-size: cover;
+            border: 8px solid var(--color);
+            margin-bottom: 1.5rem;
+            margin-right: 2rem;
+            border-radius: 1rem;
+        }
+        &_details{
+            display: flex;
+            flex-direction: column;
+            padding: 0 1.2rem;
+            &_hi{
+                position: relative;
+                width: 70px;
+                background-color: var(--color);
+                padding: 0.3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #000;
+                border-radius: 0.3rem;
+                span{
+                    font-size: 0.9rem;
+                    font-weight: 600;
+                }
+                &::after{
+                    position: absolute;
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    left: 10%;
+                    top: 80%;
+                    background-color: var(--color);
+                    // z-index: -100;
+                    transform: rotate(45deg);
+                }
+            }
+            &_name{
+                cursor: pointer;
+                h3{
+                    font-size: 3rem;
+                    color: #fff;
+                    font-weight: 600;
+                    margin: 0;
+                }
+            }
+            &_typinganimation{
+                h3{
+                    font-size: 1.7rem;
+                    color: #fff;
+                    font-weight: 500;
+                    margin: 0;
+                    animation: typing-animation 4s infinite forwards;
+                    opacity: 0;
+                    // transform: rotateX(-60deg);
+                }
+                p{
+                    font-size: 1.7rem;
+                    color: #a0a8b3;
+                    font-weight: 500;
+                    margin: 0;
+                }
+            }
+            &_socialicons{
+                margin-top: 2rem;
+                margin-bottom: 2rem;
+                &_heading{
+                    color: var(--color);
+                    font-weight: 600;
+                    font-family: "Poppins", sans-serif;
+                }
+                &_icons{
+                    margin-top: 1rem;
+                    a{
+                        text-decoration: none;
+                    }
+                    span{
+                        font-size: 1.3rem;
+                        // padding: 0.4rem 0.6rem;
+                        border: 2px solid #fff;
+                        margin-right: 1rem;
+                        border-radius: 60%;
+                        color: #fff;
+                        cursor: pointer;
+                        // background-color: var(--color);
+                        padding: 0.4rem 0.5rem 0.1rem 0.5rem;
+                        transition: all 0.5s;
+                    }
+                    span:nth-child(1):hover{
+                        border: 2px solid #E1306C;
+                        color: #E1306C;
+                    }
+                    span:nth-child(2):hover{
+                        border: 2px solid #1DA1F2;
+                        color: #1DA1F2;
+                    }
+                    span:nth-child(3):hover{
+                        border: 2px solid #0072b1;
+                        color: #0072b1;
+                    }
+                    span:nth-child(4):hover{
+                        border: 2px solid #000;
+                        color: #000;
+                    }
+                }
+            }
+            &_buttons{
+                display: flex;
+                margin-top: 2rem;
+                a{
+                    text-decoration: none;
+                }
+                &_button_1{
+                    font-size: 0.9rem;
+                    font-family: "Poppins", sans-serif;
+                    margin-right: 1rem;
+                }
+                &_button_2{
+                    font-size: 0.9rem;
+                    background-color: var(--color);
+                    font-family: "Poppins", sans-serif;
+                }
+            }
+        }
+    }
+}
+
+@keyframes typing-animation {
+    0%{
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+    100%{
+        transform: rotateX(45deg);
+        opacity: 0;
+    }
+}
+
+// @keyframes home_button_animation {
+//     from{
+//         width: 55px;
+//         height: 60px;
+//     }
+//     to{
+//         width: 100%;
+//         height: 100%;
+//     }
+// }
+
+@media screen and (max-width: 1100px) {
+
+    .home{
+        padding-top: 4rem;
+        margin-left: 0;
+        width: 100%;
+        &_name{
+            display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .home{
+        // padding-top: 1rem;
+        padding-top: 10rem;
+        padding-bottom: 3rem;
+        // overflow-x: scroll;
+        height: 100%;
+    }
+    .home_content{
+        flex-direction: column;
+        align-items: center;
+        
+        &_avatar{
+            width: 450px;
+            height: 500px;
+            margin: 0;
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 525px) {
+    .home_content{
+        flex-direction: column;
+        align-items: center;
+        
+        &_avatar{
+            width: 380px;
+            height: 500px;
+            margin: 0;
+            margin-bottom: 2rem;
+        }
+        &_details{
+            align-items: center;
+            &_name{
+                h3{
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .home{
+        padding-top: 10rem;
+    }
+    .home_content{
+        flex-direction: column;
+        align-items: center;
+        &_avatar{
+            width: 320px;
+            height: 400px;
+            margin: 0;
+            margin-bottom: 2rem;
+        }
+        &_details{
+            align-items: center;
+            &_name{
+                h3{
+                    font-size: 2rem;
+                }
+            }
+            &_typinganimation{
+                p{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .home{
+        padding-top: 10rem;
+    }
+    .home_content{
+        flex-direction: column;
+        align-items: center;
+        &_avatar{
+            width: 270px;
+            height: 310px;
+            margin: 0;
+            margin-bottom: 2rem;
+        }
+        &_details{
+            align-items: center;
+            &_name{
+                h3{
+                    font-size: 1.8rem;
+                }
+            }
+            &_typinganimation{
+                p{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
