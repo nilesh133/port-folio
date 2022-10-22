@@ -8,6 +8,7 @@ import Project from './Project/Project'
 
 // Images Import
 import Project_Demo from "../../images/project_demo.png"
+import NoteDown from "../../images/Projects/note-down.png"
 import AmazonPrime from "../../images/Projects/amazon-prime.png"
 import GoogleKeep from "../../images/Projects/Google-Keep.png"
 import GoogleDocs from "../../images/Projects/Google-Docs.png"
@@ -29,16 +30,22 @@ import ChatDesignFigma from "../../images/Projects/Chat-Design-Figma.png"
 const Projects = () => {
     const projectsList = [
         {
-            name: "Amazon Prime Clone",
-            tech: "Next JS, Firebase, Tailwind, Next-Auth",
-            link: "https://amazon-prime-clone-nilesh133.vercel.app/",
-            image: AmazonPrime
+            name: "Note Down",
+            tech: "React JS, CSS, Firebase",
+            link: "https://note-down-nilesh133.vercel.app/",
+            image: NoteDown
         },
         {
             name: "Google Keep Clone",
             tech: "Next JS, Firebase, Tailwind, Next-Auth",
             link: "https://google-keep-clone-nilesh133.vercel.app/",
             image: GoogleKeep
+        },
+        {
+            name: "Amazon Prime Clone",
+            tech: "Next JS, Firebase, Tailwind, Next-Auth",
+            link: "https://amazon-prime-clone-nilesh133.vercel.app/",
+            image: AmazonPrime
         },
         {
             name: "Google Docs Clone",
