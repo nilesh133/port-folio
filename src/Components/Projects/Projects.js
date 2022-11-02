@@ -8,6 +8,7 @@ import Project from './Project/Project'
 
 // Images Import
 import Project_Demo from "../../images/project_demo.png"
+import BlogWebsite from "../../images/Projects/blog-website.png"
 import NoteDown from "../../images/Projects/note-down.png"
 import AmazonPrime from "../../images/Projects/amazon-prime.png"
 import GoogleKeep from "../../images/Projects/Google-Keep.png"
@@ -29,6 +30,12 @@ import ChatDesignFigma from "../../images/Projects/Chat-Design-Figma.png"
 
 const Projects = () => {
     const projectsList = [
+        {
+            name: "Blog Website",
+            tech: "React JS, SCSS, Node JS, Mongo DB",
+            link: "https://blog-website-nilesh133.vercel.app/",
+            image: BlogWebsite
+        },
         {
             name: "Note Down",
             tech: "React JS, CSS, Firebase",
