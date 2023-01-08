@@ -8,6 +8,7 @@ import Project from './Project/Project'
 
 // Images Import
 import Project_Demo from "../../images/project_demo.png"
+import HireIt from "../../images/Projects/Hire-It.png"
 import BlogWebsite from "../../images/Projects/blog-website.png"
 import NoteDown from "../../images/Projects/note-down.png"
 import AmazonPrime from "../../images/Projects/amazon-prime.png"
@@ -30,6 +31,12 @@ import ChatDesignFigma from "../../images/Projects/Chat-Design-Figma.png"
 
 const Projects = () => {
     const projectsList = [
+        {
+            name: "Hire It - Job Portal",
+            tech: "React JS, SCSS, Node JS, Mongo DB",
+            link: "https://job-portal-client-nilesh133.vercel.app/",
+            image: HireIt
+        },,
         {
             name: "Blog Website",
             tech: "React JS, SCSS, Node JS, Mongo DB",
