@@ -10,6 +10,7 @@ import Project from './Project/Project'
 import Project_Demo from "../../images/project_demo.png"
 import HireIt from "../../images/Projects/Hire-It.png"
 import BlogWebsite from "../../images/Projects/blog-website.png"
+import Socialane from "../../images/Projects/Socialane.png"
 import NoteDown from "../../images/Projects/note-down.png"
 import AmazonPrime from "../../images/Projects/amazon-prime.png"
 import GoogleKeep from "../../images/Projects/Google-Keep.png"
@@ -42,6 +43,12 @@ const Projects = () => {
             tech: "React JS, SCSS, Node JS, Mongo DB",
             link: "https://blog-website-nilesh133.vercel.app/",
             image: BlogWebsite
+        },
+        {
+            name: "Socialane - Social Media App",
+            tech: "React JS, CSS, Node JS, Mongo DB",
+            link: "https://socialane-client-nilesh133.vercel.app/",
+            image: Socialane
         },
         {
             name: "Note Down",
