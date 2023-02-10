@@ -71,14 +71,14 @@ const Resume = () => {
         <div className="resume_details">
           <div className="resume_details_experience">
             <div className='pages_subheading'>
-              <h3>Education</h3>
+              <h3>Experience</h3>
               <div className='pages_subheading_circle'></div>
             </div>
             <ExpAndEdu details={experience} />
           </div>
           <div className="resume_details_experience">
             <div className='pages_subheading'>
-              <h3>Experience</h3>
+              <h3>Education</h3>
               <div className='pages_subheading_circle'></div>
             </div>
             <ExpAndEdu details={education} />

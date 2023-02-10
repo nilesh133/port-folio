@@ -3,7 +3,7 @@ import "./_home.scss";
 // import TypingTextAnimation from 'react-typing-text-animation'
 import { Helmet } from "react-helmet"
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
-import resume from "../../images/Nilesh-Resume.pdf"
+import resume from "../../images/Nilesh_Resume.pdf"
 // Icons Import
 import { AiFillInstagram, AiFillTwitterCircle, AiFillGithub } from "react-icons/ai"
 import { FaLinkedin } from "react-icons/fa"
@@ -43,7 +43,7 @@ const Home = () => {
                     <div className="home_content_details_typinganimation">
                         <p>
                             <Typical
-                                steps={['Web Developer', 4000, 'Java and Python Coder', 4000]}
+                                steps={['MERN Stack Developer', 4000, 'Java Coder', 4000]}
                                 loop={Infinity}
                             />
                         </p>

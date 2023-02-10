@@ -3,7 +3,7 @@ import "./_navbar.scss"
 import { Link, useNavigate } from "react-router-dom"
 import { Button } from "@nextui-org/react";
 import classNames from "classnames";
-import resume from "../../images/Nilesh-Resume.pdf"
+import resume from "../../images/Nilesh_Resume.pdf"
 
 // Icons import
 import { IoHomeSharp, IoPersonSharp, IoBagRemoveSharp, IoCallSharp } from "react-icons/io5"
