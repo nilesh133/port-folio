@@ -3,7 +3,7 @@ import "./_home.scss";
 // import TypingTextAnimation from 'react-typing-text-animation'
 import { Helmet } from "react-helmet"
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack';
-import resume from "../../images/Nilesh_Resume.pdf"
+import resume from "../../images/Nilesh-Resume.pdf"
 // Icons Import
 import { AiFillInstagram, AiFillTwitterCircle, AiFillGithub } from "react-icons/ai"
 import { FaLinkedin } from "react-icons/fa"
