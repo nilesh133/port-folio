@@ -10,10 +10,16 @@ import ExpAndEdu from './ExpAndEdu/ExpAndEdu';
 const Resume = () => {
   const experience = [
     {
+      title: "Software Developer Trainee",
+      time: "Feb 2023 - Present",
+      organization: "Ace Analytics",
+      // description: "Worked On multiple projects Of company as a React JS Developer"
+    },
+    {
       title: "React JS Developer Intern",
-      time: "March 2022 - Present",
+      time: "March 2022 - September 2022",
       organization: "Mirats Insights",
-      description: "Working On Multiple Projects Of Company As A React JS Developer"
+      description: "Worked On multiple projects Of company as a React JS Developer"
     },
     {
       title: "Software Developer Intern",
@@ -34,7 +40,7 @@ const Resume = () => {
       title: "B.Tech - Computer Science and Technology",
       time: "Aug 2019 - Present",
       organization: "St. Andrews Institute Of Tech And Mgmt(MDU)",
-      description: "Currently I am in 5th Semester of Btech with specialization of Computer Science"
+      description: "Currently I am in 8th Semester of Btech with specialization of Computer Science"
     },
     {
       title: "HSC",
