@@ -15,11 +15,14 @@ import { FiMenu } from "react-icons/fi"
 
 
 const Navbar = () => {
+    let currLoc = window.location.pathname;
     let navigate = useNavigate();
     const { overAllColor, setOverAllColor, loader, setLoader } = useContext(ColorContext);
     console.log(overAllColor)
 
     const [showNavbar, setShowNavbar] = useState(false)
+
+    console.log(currLoc)
 
     return (
         <>
@@ -28,27 +31,27 @@ const Navbar = () => {
                     <h3>nilesh</h3>
                 </div>
                 <div className='navbar_items'>
-                    <div className='navbar_items_item' onClick={() => navigate("/")}>
+                    <div className={currLoc === "/" ? 'navbar_items_item navbar_items_active' : "navbar_items_item"} onClick={() => navigate("/")}>
                         <span><IoHomeSharp /></span>
                         <span>Home</span>
                     </div>
-                    <div className='navbar_items_item' onClick={() => navigate("/about")}>
+                    <div className={currLoc === "/about" ? 'navbar_items_item navbar_items_active' : "navbar_items_item"} onClick={() => navigate("/about")}>
                         <span><IoPersonSharp /></span>
                         <span>About</span>
                     </div>
-                    <div className='navbar_items_item' onClick={() => navigate("/resume")}>
+                    <div className={currLoc === "/resume" ? 'navbar_items_item navbar_items_active' : "navbar_items_item"} onClick={() => navigate("/resume")}>
                         <span><BsFileEarmarkTextFill /></span>
                         <span>Resume</span>
                     </div>
-                    <div className='navbar_items_item' onClick={() => navigate("/projects")}>
+                    <div className={currLoc === "/projects" ? 'navbar_items_item navbar_items_active' : "navbar_items_item"} onClick={() => navigate("/projects")}>
                         <span><IoBagRemoveSharp /></span>
                         <span>Projects</span>
                     </div>
-                    <div className='navbar_items_item' onClick={() => navigate("/skills")}>
+                    <div className={currLoc === "/skills" ? 'navbar_items_item navbar_items_active' : "navbar_items_item"} onClick={() => navigate("/skills")}>
                         <span><BsFileEarmarkTextFill /></span>
                         <span>Skills</span>
                     </div>
-                    <div className='navbar_items_item' onClick={() => navigate("/contact")}>
+                    <div className={currLoc === "/contact" ? 'navbar_items_item navbar_items_active' : "navbar_items_item"} onClick={() => navigate("/contact")}>
                         <span><IoCallSharp /></span>
                         <span>Contact</span>
                     </div>

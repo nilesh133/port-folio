@@ -40,10 +40,11 @@ const About = () => {
                             <span><ImLocation2 /></span>
                             <p>Gurgaon, India</p>
                         </div>
-                        <p>A B.Tech Computer Science Student At Saint Andrews Institute Of Technology And Management. I Am A Web Developer And A Java And Python Coder. I Also Have A Good Knowledge Of C/C++.
+                        <p>Hey there! I'm Nilesh Prajapati, and I've been on this exciting journey in the world of tech and development. I graduated with a B.Tech in Computer Science from St. Andrews Institute of Tech. and Mgmt. in 2023.
                         </p>
-                        <p>I Had Worked As A Software Developer In Healohub Technologies.
-                            Currently I Am Working As A React Developer At Mirats Insights, Mumbai.</p>
+                        <p>I began my developer journey as a Frontend Developer intern in Healohub Technologies, Bangalore when I was in 2nd year of my college. From there I jumped into a 6-month React Developer internship in Mirats Insights, Mumbai.
+                        </p>
+                        <p>Currently I am working as a full time React Developer in Ace Analytics, Ahmedabad from Feb 2023.</p>
                     </div>
                 </div>
                 <div className="about_interests">

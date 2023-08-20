@@ -13,34 +13,34 @@ const Resume = () => {
       title: "Software Developer Trainee",
       time: "Feb 2023 - Present",
       organization: "Ace Analytics",
-      // description: "Worked On multiple projects Of company as a React JS Developer"
+      description: "In my current role, I'm a React developer specializing in implementing complex functionalities, crafting appealing designs, integrating APIs for real-time data, etc."
     },
     {
       title: "React JS Developer Intern",
       time: "March 2022 - September 2022",
       organization: "Mirats Insights",
-      description: "Worked On multiple projects Of company as a React JS Developer"
+      description: "Collaborated closely with the development team across various projects using React JS, Next JS, and Firebase"
     },
     {
-      title: "Software Developer Intern",
+      title: "Frontend Developer Intern",
       time: "Sep 2021 - Dec 2021",
       organization: "Healohub Technologies India (P) Limited",
-      description: "Worked as a Software Developer where I used to handle the complete Front-End work of company."
+      description: "Worked as a Frontend Developer where I used to handle the complete Front-End work of company."
     },
     {
       title: "Executive Head",
       time: "April 2021 - March 2022",
       organization: "Coders Club",
-      description: "I Had Worked As A Executive Head At Coder's Club Where I Used To Handle The Web Development Domain And Took The Sessions On Same Domain"
+      description: "I had worked as a Executive Head at Coder's Club where I used to handle the Web Development domain and took the sessions on same domain."
     }
   ]
 
   const education = [
     {
       title: "B.Tech - Computer Science and Technology",
-      time: "Aug 2019 - Present",
+      time: "2019 -2023",
       organization: "St. Andrews Institute Of Tech And Mgmt(MDU)",
-      description: "Currently I am in 8th Semester of Btech with specialization of Computer Science"
+      description: "I completed my B.Tech with 8.9 CGPA with specialization of Computer Science."
     },
     {
       title: "HSC",
